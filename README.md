@@ -4,7 +4,7 @@ Script para obtener en terminal el texto de el archivo que indiques.
 ## Requerimientos
 - Para utilizar el script, debes instalar localmente: **poppler, imagemagick, ghostscript**.
 
-> brew install poppler imagemagick ghostscript
+`brew install poppler imagemagick ghostscript`
 
  - Node.js 6.* o mayor.
 

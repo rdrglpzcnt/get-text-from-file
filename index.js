@@ -21,9 +21,14 @@ const getPdfAsImagePath = async (pdfPath) => {
 	// tomar dimensiones del archivo
 	let dimentions = await getFileDimentions(pdfPath);
 	let pdfBuffer = fs.readFileSync(pdfPath);
+
+	// triplicar dimensiones
+	Object.keys(dimentions).forEach(d => {
+		dimentions[d] = (dimentions[d] * 3)
+	})
 	
 	const options = {
-	  density: 100,
+	  density: 150,
 	  saveFilename: "tmp",
 	  savePath: "./files",
 	  format: "png",
